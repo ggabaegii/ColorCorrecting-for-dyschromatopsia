@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerView"
+        android:layout_below="@id/sortOptions"
+        android:layout_marginTop="8dp"/>
+
+    <RadioGroup
+        android:id="@+id/sortOptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/sortByTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="시간순" />
+
+        <RadioButton
+            android:id="@+id/sortByTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="제목순" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/noData_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Data"
+        android:textSize="30sp"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

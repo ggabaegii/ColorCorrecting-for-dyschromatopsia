@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7D2C3"
+    tools:context=".HSV">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title_hsv_text"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:fontFamily="@font/school"
+                android:gravity="center"
+                android:text="HSV"
+                android:textColor="#33250E"
+                android:textSize="34sp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="660dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout"
+                    android:layout_width="358dp"
+                    android:layout_height="479dp"
+                    android:layout_marginBottom="65dp"
+                    android:background="@drawable/square"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/hsv_imageView"
+                        android:layout_width="332dp"
+                        android:layout_height="451dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.511"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.476"
+                        app:srcCompat="@drawable/rectangle_2" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    tools:layout_editor_absoluteY="650dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="vertical">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <EditText
+                                android:id="@+id/name_HSV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:ems="10"
+                                android:fontFamily="@font/school"
+                                android:inputType="text"
+                                android:hint="제목 입력"
+                                android:textColor="#424242"
+                                android:maxLength="10"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@+id/save_HSV"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.8" />
+
+                            <Button
+                                android:id="@+id/save_HSV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="저장"
+                                android:fontFamily="@font/school"
+                                android:textSize="16sp"
+                                android:background="#BFA398"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/name_HSV"
+                                app:layout_constraintTop_toTopOf="parent" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="105dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/back_btn"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <SeekBar
+                                android:id="@+id/seekBar5"
+                                android:layout_width="255dp"
+                                android:layout_height="22dp"
+                                android:layout_marginStart="0dp"
+                                android:layout_marginTop="16dp"
+                                android:layout_marginEnd="22dp"
+                                android:theme="@style/SeekBarColor"
+                                style="@android:style/Widget.Holo.Light.ProgressBar.Horizontal"
+
+                                app:layout_constraintBottom_toTopOf="@+id/seekBar6"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <SeekBar
+                                android:id="@+id/seekBar6"
+                                android:layout_width="255dp"
+                                android:layout_height="22dp"
+                                android:layout_marginStart="0dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="22dp"
+                                android:layout_marginBottom="5dp"
+                                android:theme="@style/SeekBarColor"
+                                style="@android:style/Widget.Holo.Light.ProgressBar.Horizontal"
+
+                                app:layout_constraintBottom_toTopOf="@+id/seekBar7"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/seekBar5" />
+
+                            <SeekBar
+                                android:id="@+id/seekBar7"
+                                android:layout_width="255dp"
+                                android:layout_height="22dp"
+                                android:layout_marginStart="0dp"
+                                android:layout_marginEnd="22dp"
+                                android:layout_marginBottom="16dp"
+                                android:theme="@style/SeekBarColor"
+                                style="@android:style/Widget.Holo.Light.ProgressBar.Horizontal"
+
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/seekBar6" />
+
+                            <TextView
+                                android:id="@+id/textView2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="16dp"
+                                android:layout_marginEnd="8dp"
+                                android:text="H"
+                                android:fontFamily="@font/school"
+                                app:layout_constraintBottom_toTopOf="@+id/textView3"
+                                app:layout_constraintEnd_toStartOf="@+id/seekBar5"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/textView3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginBottom="5dp"
+                                android:text="S"
+                                android:fontFamily="@font/school"
+                                app:layout_constraintBottom_toTopOf="@+id/textView4"
+                                app:layout_constraintEnd_toStartOf="@+id/seekBar6"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+                            <TextView
+                                android:id="@+id/textView4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginBottom="16dp"
+                                android:text="V"
+                                android:fontFamily="@font/school"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@+id/seekBar7"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+                            <!--SeekBar Text 뷰-->
+
+                            <TextView
+                                android:id="@+id/hueValueText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="18dp"
+                                android:fontFamily="@font/school"
+                                android:text=""
+                                app:layout_constraintStart_toEndOf="@+id/seekBar5"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/saturationValueText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="0dp"
+                                android:layout_marginEnd="0dp"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="@font/school"
+                                android:text=""
+                                app:layout_constraintTop_toBottomOf="@+id/hueValueText"
+                                app:layout_constraintStart_toEndOf="@+id/seekBar6"
+                                app:layout_constraintVertical_bias="0.296" />
+
+                            <TextView
+                                android:id="@+id/valueValueText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="0dp"
+                                android:layout_marginEnd="0dp"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="@font/school"
+                                android:text=""
+                                app:layout_constraintStart_toEndOf="@+id/seekBar7"
+                                app:layout_constraintTop_toBottomOf="@+id/saturationValueText"
+                                tools:layout_editor_absoluteY="73dp" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

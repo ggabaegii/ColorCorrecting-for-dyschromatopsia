@@ -1,0 +1,1 @@
+C:\color\app\src\main\cpp\CMakeLists.txt

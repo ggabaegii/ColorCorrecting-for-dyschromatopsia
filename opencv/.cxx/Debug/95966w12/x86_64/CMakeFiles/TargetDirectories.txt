@@ -1,0 +1,3 @@
+C:/color/opencv/.cxx/Debug/95966w12/x86_64/CMakeFiles/opencv_jni_shared.dir
+C:/color/opencv/.cxx/Debug/95966w12/x86_64/CMakeFiles/edit_cache.dir
+C:/color/opencv/.cxx/Debug/95966w12/x86_64/CMakeFiles/rebuild_cache.dir

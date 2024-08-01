@@ -1,0 +1,7 @@
+[
+{
+  "directory": "C:/color/app/.cxx/Debug/3z6h2i4r/x86",
+  "command": "C:\\Users\\sogo0\\AppData\\Local\\Android\\Sdk\\ndk\\25.1.8937393\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=i686-none-linux-android21 --sysroot=C:/Users/sogo0/AppData/Local/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dnative_lib_EXPORTS -IC:/color/opencv/native/jni/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -std=gnu++11 -fno-limit-debug-info  -fPIC -o CMakeFiles\\native-lib.dir\\native-lib.cpp.o -c C:\\color\\app\\src\\main\\cpp\\native-lib.cpp",
+  "file": "C:\\color\\app\\src\\main\\cpp\\native-lib.cpp"
+}
+]
